@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <title>yettn4 | developer</title>
+</head>
+
+<body>
+    <canvas id="canvas-bg"></canvas>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"></div>
+                <div class="nav-links">
+                    <a href="#about"><span class="highlight">01.</span> Обо мне</a>
+                    <a href="#skills"><span class="highlight">02.</span> Навыки</a>
+                    <a href="#projects"><span class="highlight">03.</span> Проекты</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <p class="highlight">Привет, меня зовут</p>
+                <h1>Ярослав.</h1>
+                <h1 style="color: var(--text-muted); font-size: 4rem;">Я создаю цифровые системы.</h1>
+                <p>
+                    Android-разработчик и инженер IoT. Превращаю сложные идеи в элегантный код на Kotlin и C++.
+                    Специализируюсь на Jetpack Compose и интеграции устройств.
+                </p>
+                <a href="#projects" class="btn">Посмотреть работы</a>
+            </div>
+        </section>
+
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="highlight">02.</span> Технический стек</h2>
+                <div class="skills-grid">
+                    <!-- Android Card -->
+                    <div class="skill-card">
+                        <h3>Android Development</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">
+                            Создание современных нативных приложений с использованием MVVM/MVI архитектуры.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>Coroutines</span>
+                            <span>Dagger/Hilt</span>
+                            <span>Retrofit</span>
+                        </div>
+                    </div>
+
+                    <!-- IoT Card -->
+                    <div class="skill-card">
+                        <h3>IoT & Embedded</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">
+                            Разработка систем "умного дома" и промышленных контроллеров. Работа с железом.
+                        </p>
+                        <div class="tech-tags">
+                            <span>C++</span>
+                            <span>ESP32 / Arduino</span>
+                            <span>MQTT</span>
+                            <span>Bluetooth LE</span>
+                            <span>RTOS</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <h3>Tools & Architecture</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">
+                            Полный цикл разработки: от проектирования БД до деплоя в Google Play.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Git</span>
+                            <span>CI/CD</span>
+                            <span>Room DB</span>
+                            <span>Figma</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="highlight">03.</span> Избранные проекты</h2>
+
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="highlight" style="font-size: 0.9rem; margin-bottom: 10px;">IoT System</p>
+                        <h3 class="project-title">Smart Home Controller</h3>
+                        <p class="project-desc">
+                            Единая экосистема для управления умным домом. Приложение на Android (Compose)
+                            общается с кастомными платами на ESP32 через MQTT и BLE. Реализована
+                            автоматизация сценариев и мониторинг датчиков в реальном времени.
+                        </p>
+                        <div class="project-tech">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>C++ (Firmware)</span>
+                            <span>MQTT</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="highlight" style="font-size: 0.9rem; margin-bottom: 10px;">Android App</p>
+                        <h3 class="project-title">Crypto Tracker Pro</h3>
+                        <p class="project-desc">
+                            Приложение для отслеживания криптовалют с красивыми графиками и уведомлениями.
+                            Использует Clean Architecture, работает оффлайн благодаря Room.
+                        </p>
+                        <div class="project-tech">
+                            <span>Kotlin</span>
+                            <span>MPAndroidChart</span>
+                            <span>Room</span>
+                            <span>WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
