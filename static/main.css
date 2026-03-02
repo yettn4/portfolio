@@ -291,3 +291,42 @@ footer {
     }
 
 }
+
+footer {
+    padding: 40px 0;
+
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--secondary);
+    font-size: 24px;
+    transition: all 0.3s;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--my-akcent-color);
+    background: rgba(212, 175, 55, 0.2);
+    transform: translateY(-3px);
+}
